@@ -10,4 +10,4 @@ jobs:
         env:
           RUNNER_PASSWORD: ${{ secrets.RUNNER_PASSWORD }}
           FRPS_DOMAIN: ${{ secrets.FRPS_DOMAIN }}
-        run: ./run-frpc.sh
+        run: chmod +x ./run-frpc.sh && ./run-frpc.sh
