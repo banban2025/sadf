@@ -1,4 +1,4 @@
-name: Ubuntu
+name: Ubuntu_16002
 on: [workflow_dispatch]
 jobs:
   build:
