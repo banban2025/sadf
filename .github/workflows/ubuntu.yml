@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - run: ./install-frp.sh
+      - run: chmod +x ./install-frp.sh && ./install-frp.sh
       - name: run frpc
         env:
           RUNNER_PASSWORD: ${{ secrets.RUNNER_PASSWORD }}
