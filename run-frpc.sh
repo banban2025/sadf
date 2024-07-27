@@ -10,7 +10,7 @@ echo "$USER:$RUNNER_PASSWORD" | chpasswd
 EOF
 fi
 
-if [ -v FRPS_PORT]; then
+if [ -v FRPS_PORT ]; then
   sed -i 's/16000/$FRPS_PORT/g' frpc.ini
   sed -i 's/ssh/ssh_$FRPS_PORT/g' frpc.ini
 fi
