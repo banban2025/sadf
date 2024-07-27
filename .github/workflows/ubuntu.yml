@@ -10,5 +10,4 @@ jobs:
         env:
           RUNNER_PASSWORD: ${{ secrets.RUNNER_PASSWORD }}
           FRPS_DOMAIN: ${{ secrets.FRPS_DOMAIN }}
-          SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
         run: ./run-frpc.sh
